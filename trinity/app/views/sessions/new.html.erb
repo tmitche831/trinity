@@ -1,0 +1,14 @@
+<div id="login_field">
+  <%= form_tag '/user_login' do %>
+    <%= label_tag 'username: ' %>
+    <%= text_field_tag 'username', nil, :autofocus => true %>
+
+    <%= label_tag 'password: ' %>
+    <%= password_field_tag 'password' %>
+
+    <%= button_tag 'Login' %>
+
+  <% end %>
+  <hr>
+  <p>If you have not registered, please <%= link_to('Sign up', new_user_path) %></p>
+</div>

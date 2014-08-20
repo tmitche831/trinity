@@ -1,0 +1,15 @@
+<div id="booking-form">
+  <%= form_for @booking do |f| %>
+    <h3>Username and Password</h3>
+      <p>
+        <%= f.label :guests, "Expected Guests: " %>
+        <%= f.text_field :guests, :autofocus => true %>
+      </p>
+
+      <p>
+        <%= f.label :date_from, "Date From: " %>
+        <%= f.label :date_to, "Date To: " %>
+      </p>
+
+  <% end %>
+</div>

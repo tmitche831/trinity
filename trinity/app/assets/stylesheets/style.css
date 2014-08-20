@@ -1,0 +1,47 @@
+#main-container {
+  background-image: url('/assets/vines.png');
+  width: 100%;
+  margin-top: -20px;
+}
+
+#name-box {
+  max-width: 250px;
+  background-image: url(/assets/back-image.png);
+  background-size: cover;
+}
+
+
+
+#logo_image {
+  text-align: center;
+}
+
+#logo_image img {
+  height: 200px;
+  width: 200px;
+}
+
+#intro_container {
+  text-align: center;
+}
+
+.houses_contain {
+  text-align: center;
+}
+
+.houses_contain ul li {
+  list-style: none;
+}
+
+.houses-div {
+  padding: 1em;
+  display: inline-block;
+}
+
+.house_show {
+  text-align: center;
+}
+
+.house_show #show-image {
+  text-align: center;
+}
