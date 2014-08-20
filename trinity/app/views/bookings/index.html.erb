@@ -1,3 +1,6 @@
 <h1>Bookings</h1>
-
-<%== smartnav %>
+<% if @current_user.present? %>
+  <%= link_to('Make a new booking', houses_path) %>
+<% else %>
+  <h3>Please Log in or Sign up to continue</h3>
+<% end %>

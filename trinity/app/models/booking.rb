@@ -9,6 +9,7 @@
 #  house_id   :integer
 #  date_from  :date
 #  date_to    :date
+#  note       :text
 #
 
 class Booking < ActiveRecord::Base

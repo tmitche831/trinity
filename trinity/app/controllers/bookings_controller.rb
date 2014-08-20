@@ -9,11 +9,16 @@ class BookingsController < ApplicationController
 
   def new
     @booking = Booking.new
+    @house = House.find params[:house_id]
   end
 
   def create
     @booking = Booking.create booking_params
-    @booking.save
+    if @booking.save
+      redirect_to bookings_path
+    else
+      render :new
+    end
   end
 
   def update

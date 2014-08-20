@@ -1,15 +1,31 @@
 <div id="booking-form">
   <%= form_for @booking do |f| %>
-    <h3>Username and Password</h3>
-      <p>
+    <h2><%= @house.name %></h2>
+    <h3>Maximum Occupancy: <%= @house.max_occ %></h3>
+    <h4>WARNING: All Booking requests are sent through email to the Owners. Confirmation can take between 2-3days</h4>
+      <p id="exp-guests">
         <%= f.label :guests, "Expected Guests: " %>
-        <%= f.text_field :guests, :autofocus => true %>
+        <%= f.select :guests, 1..@house.max_occ %>
       </p>
 
-      <p>
+      <p id="date-from">
         <%= f.label :date_from, "Date From: " %>
-        <%= f.label :date_to, "Date To: " %>
+        <%= f.date_select :date_from, :order => [:day, :month, :year] %>
       </p>
 
+      <p id="date-to">
+        <%= f.label :date_to, "Date To: " %>
+        <%= f.date_select :date_to, :order => [:day, :month, :year] %>
+      </p>
+
+      <p id="pers-note">
+        <%= f.label :note, "Personal Note:" %>
+        <br>
+        <%= f.text_area :note, :rows => "10" %>
+      </p>
+      <%= f.button %>
   <% end %>
+
+<iframe id="calendar-frame" src="https://www.google.com/calendar/embed?src=o2r9kpg0f5iru8saf6o05n9nt0%40group.calendar.google.com&ctz=Australia/Sydney" style="border: 0" width="500" height="300" frameborder="0" scrolling="no"></iframe>
+
 </div>

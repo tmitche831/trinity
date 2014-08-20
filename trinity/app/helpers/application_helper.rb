@@ -12,9 +12,6 @@ module ApplicationHelper
       links += "<li>"
       links += link_to('Edit ' + @current_user.username, edit_user_path(@current_user.id))
       links += "</li>"
-      # links += "<li>"
-      # links += link_to('Bookings', bookings_path(@current_user.id))
-      # links += "</li>"
     else
       links += "<p>"
       links += "To make a booking please " + link_to('Sign up', new_user_path ) + " or " + link_to('Sign in', user_login_path)
