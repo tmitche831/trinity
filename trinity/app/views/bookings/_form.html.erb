@@ -2,7 +2,12 @@
   <%= form_for @booking do |f| %>
     <h2><%= @house.name %></h2>
     <h3>Maximum Occupancy: <%= @house.max_occ %></h3>
-    <h4>WARNING: All Booking requests are sent through email to the Owners. Confirmation can take between 2-3days</h4>
+    <h4>WARNING: All Booking requests are sent through email to the Owners.<br>Confirmation can take between 2-3days</h4>
+      <p>
+        <!-- Fix ME!!! -->
+        <%#= f.hidden_field :house_id, @house.id %>
+      </p>
+
       <p id="exp-guests">
         <%= f.label :guests, "Expected Guests: " %>
         <%= f.select :guests, 1..@house.max_occ %>
@@ -21,7 +26,7 @@
       <p id="pers-note">
         <%= f.label :note, "Personal Note:" %>
         <br>
-        <%= f.text_area :note, :rows => "10" %>
+        <%= f.text_area :note, :placeholder => "Please include the House name and any other details you would like to enquire about", :rows => 10 %>
       </p>
       <%= f.button %>
   <% end %>

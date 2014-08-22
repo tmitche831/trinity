@@ -3,7 +3,7 @@
 <% @houses.each do |house| %>
   <div class="houses-div">
     <p id="house-name"><%= link_to(house.name, house) %></p>
-    <p id="house-image"><%= image_tag(house.index_image, :class => 'thumb') %></p>
+    <p id="house-image"><%= image_tag(house.index_image, :class => 'display') %></p>
   </div>
 <% end %>
 </div>

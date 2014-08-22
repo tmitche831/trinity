@@ -10,14 +10,18 @@
 <div id="main-container">
   <div id="name-box">
     <h1>Trinity Vineyard</h1>
-    <nav id="main_links">
+    <nav id="main-links">
       <%= link_to('Home', users_path) %>
       <%= link_to('Houses', houses_path) %>
       <%= link_to('Bookings', bookings_path) %>
     </nav>
   </div>
+  <div id="smartnav">
+    <%== smartnav %>
+  </div>
 </div>
-<%== smartnav %>
+
+
 
 <%= yield %>
 

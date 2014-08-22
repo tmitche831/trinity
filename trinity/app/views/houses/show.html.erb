@@ -1,7 +1,7 @@
 <div class="house_show">
-<h2><%= @house.name %></h2>
-  <div>
-    <div id="show-image"><%= image_tag(@house.image, :class => 'thumb') %></div>
+  <%= image_tag(@house.image, :class => 'thumb') %>
+  <div id="house-info">
+    <h2><%= @house.name %></h2>
     <p><%= @house.description %></p>
     <p>Maximum Occpunacy: <%= @house.max_occ %></p>
     <p><%= link_to('Book!', new_booking_path(:house_id => @house.id)) %></p>

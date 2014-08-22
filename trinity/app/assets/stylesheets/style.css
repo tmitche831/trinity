@@ -1,16 +1,94 @@
+h1 {
+  font-family: 'Courgette', cursive;
+}
+
 #main-container {
   background-image: url('/assets/vines.png');
   width: 100%;
-  margin-top: -20px;
+  margin-top: -22px;
+  margin-bottom: 25px;
+}
+
+#smartnav {
+  text-align: center;
+  list-style: none;
+  background-color: #333333;
+  width: 250px;
+  height: 72px;
+  margin: auto;
+  padding: .29em;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+#smartnav li a {
+  text-decoration: none;
+  color: #BE1E2D;
+}
+
+#smartnav li a:hover {
+  text-decoration: underline;
+  color: red;
 }
 
 #name-box {
   max-width: 250px;
   background-image: url(/assets/back-image.png);
   background-size: cover;
+  color: #BE1E2D;
 }
 
+#main-links {
+  text-align: center;
+}
 
+#main-links a {
+  text-decoration: none;
+  color: #BE1E2D;
+  padding: .5em;
+}
+
+#main-links a:hover {
+  /*text-decoration: underline;*/
+  background-color: #BE1E2D;
+  color: black;
+}
+
+#booking-index {
+  margin: auto;
+  text-align: center;
+  max-width: 85%;
+  padding: .5em;
+  background-color: #333333;
+  border-radius: 25px;
+  margin-top: 14px;
+}
+
+#booking-index a {
+  text-decoration: none;
+  color: #BE1E2D;
+}
+
+#booking-index a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+#booking-inputs {
+  margin: auto;
+  max-width: 85%;
+  padding: .5em;
+  background-color: #333333;
+  border-radius: 25px;
+  /*text-align: center;*/
+}
+
+#calendar-frame {
+  position: absolute;
+  right: 98px;
+  top: 208px;
+}
 
 #logo_image {
   text-align: center;
@@ -27,6 +105,11 @@
 
 .houses_contain {
   text-align: center;
+  margin: auto;
+  max-width: 85%;
+  padding: .5em;
+  background-color: #333333;
+  border-radius: 25px;
 }
 
 .houses_contain ul li {
@@ -40,8 +123,51 @@
 
 .house_show {
   text-align: center;
+  margin: auto;
+  max-width: 85%;
+  height: 400px;
+  padding: .5em;
+  background-color: #333333;
+  border-radius: 25px;
 }
 
-.house_show #show-image {
-  text-align: center;
+.houses-div #house-name a {
+  text-decoration: none;
+  color: #BE1E2D;
+  font-weight: bold;
+}
+
+.houses-div #house-name a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+#house-info {
+  width: 50%;
+  position: absolute;
+  top: 187px;
+  right: 168px;
+}
+
+#house-info p a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  background-color: #BE1E2D;
+  padding: .4em;
+  border-radius: 25px;
+}
+
+#house-info p a:hover {
+  text-decoration: underline;
+  color: red;
+  background-color: black;
+}
+
+.thumb {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 163px;
+  left: 132px;
 }
